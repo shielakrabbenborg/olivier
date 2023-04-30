@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #A7D7EF;
+}
+
+
+#game-board {
+  display: inline-grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(4, 100px);
+  grid-gap: 2px;
+  border: 2px solid black;
+  width: 508px;
+  height: 406px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.piece {
+  width: 100px;
+  height: 100px;
+  background-image: url('happy_birthday_olivier.jpg');
+  background-size: 500px 400px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#celebration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#game-board.completed {
+  visibility: hidden;
+}
